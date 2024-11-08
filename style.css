@@ -1,0 +1,415 @@
+/* ========== Estilos Globais ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 60px;
+    overflow-x: hidden;
+}
+
+/* ========== Header ========== */
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2d006f;
+    padding: 10px 20px;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #e6b800;
+}
+
+.navbar {
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #e6b800;
+}
+
+/* ========== Seção de Apresentação ========== */
+.intro-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #2d006f;
+    color: white;
+    padding: 40px 0;
+    width: 100vw;
+}
+
+.intro-content {
+    max-width: 600px;
+}
+
+.intro-section h1 {
+    font-size: 2.5em;
+}
+
+.intro-section .highlight {
+    color: #e6b800;
+}
+
+.intro-section p {
+    margin: 10px 0;
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #e6b800;
+    color: #2d006f;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #c59b00;
+}
+
+/* ========== Seção de Depoimentos ========== */
+.testimonial-section {
+    background-color: #f5f5fa;
+    padding: 60px 20px;
+    text-align: center;
+    color: #333;
+}
+
+.testimonial-section h2 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #2d006f;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.testimonial-section h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #2d006f;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.testimonial {
+    max-width: 1000px;
+    margin: auto;
+    padding: 50px 60px;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.client-photo {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 3px solid #2d006f;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.client-photo:hover {
+    transform: scale(1.1);
+}
+
+blockquote {
+    margin: 0;
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+}
+
+.author {
+    font-size: 1em;
+    color: #666;
+    font-style: italic;
+}
+
+/* ========== Áreas de Atuação ========== */
+.areas-atuacao-section {
+    background-color: #2d006f;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.areas-atuacao-section h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.areas-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Estilos Básicos do Bloco */
+.area-card {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    width: 200px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito de elevação e sombra no bloco ao passar o mouse */
+.area-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Contêiner da Imagem */
+.area-icon {
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Imagem com efeito de zoom */
+.area-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+/* Zoom na imagem ao passar o mouse no bloco */
+.area-card:hover .area-icon img {
+    transform: scale(1.1);
+}
+
+/* Estilo do texto abaixo do ícone */
+.area-card p {
+    margin: 0;
+    font-size: 1em;
+    color: #2d006f;
+    padding: 10px 0;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ========== Formulário de Contato ========== */
+.contact-section {
+    background-color: #f5f5fa;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: auto;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact-form button {
+    padding: 10px;
+    background-color: #2d006f;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #e6b800;
+}
+
+/* ========== Rodapé ========== */
+.footer-section {
+    background-color: #2d006f;
+    color: white;
+    padding: 40px 20px;
+    font-size: 0.9em;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.footer-logo h3,
+.footer-nav h4,
+.footer-contact h4,
+.footer-social h4 {
+    color: #e6b800;
+}
+
+.footer-nav ul {
+    list-style: none;
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+    color: #e6b800;
+}
+
+.footer-social .social-icons a {
+    color: white;
+    margin-right: 15px;
+    font-size: 1.2em;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.footer-social .social-icons a:hover {
+    color: #e6b800;
+    transform: scale(1.2);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #444;
+    font-size: 0.8em;
+}
+
+/* Botão "Voltar ao Topo" */
+#backToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    font-size: 18px;
+    padding: 10px;
+    background-color: #2d006f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#backToTopBtn:hover {
+    background-color: #e6b800;
+}
+
+/* ========== Animações ========== */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ========== Media Queries ========== */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .intro-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .testimonial-content,
+    .footer-content,
+    .areas-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    blockquote {
+        padding-left: 0;
+    }
+}
+
+/* Estilo de foco para acessibilidade */
+a:focus, button:focus, input:focus, textarea:focus {
+    outline: 2px solid #e6b800;
+    outline-offset: 2px;
+}
+
+/* Aumentar contraste em elementos importantes */
+button, .navbar a, .footer-section a {
+    color: #ffffff;
+}
+
+button:hover, .navbar a:hover, .footer-section a:hover {
+    color: #e6b800;
+}
+
+/* Feedback visual em botões ao focar */
+button:focus {
+    background-color: #c59b00;
+}
+
+/* Adicionar melhor visibilidade ao hover e focus */
+input:focus, textarea:focus {
+    border: 2px solid #e6b800;
+}
