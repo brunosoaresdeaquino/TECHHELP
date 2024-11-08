@@ -29,3 +29,8 @@ Imagens: Recursos visuais como logo.jpg, Hardware.jpg, Suporte.jpg, e outros
 - Modifique script.js para funcionalidades adicionais.
 
 
+
+## 🔗 Links
+[![deployed](https://img.shields.io/website
+)](https://brunosoaresdeaquino.github.io/TECHHELP/)
+
