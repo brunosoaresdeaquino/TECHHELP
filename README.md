@@ -1,4 +1,4 @@
-TECHHELP - Suporte Técnico de TI
+# TECHHELP - Suporte Técnico de TI
 TECHHELP é uma solução de suporte técnico especializada em manter sua infraestrutura de TI eficiente e segura. Oferecemos suporte remoto e presencial em hardware, software e redes.
 
 Estrutura do Projeto
@@ -14,3 +14,5 @@ Como Usar
 Abra index.html em um navegador para visualizar o projeto.
 Personalize o conteúdo e estilos conforme necessário.
 Modifique script.js para funcionalidades adicionais.
+Contato
+Dúvidas? Envie um e-mail para contato@techhelp.com.
